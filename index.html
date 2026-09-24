@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NN Consultor — Segunda opinión de marketing para tu empresa</title>
+<meta name="description" content="Analizamos tu web, tu SEO, tus anuncios y tus redes sociales en 7 días y te decimos si tu inversión en marketing está funcionando de verdad. Auditoría independiente, con garantía del 100%.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nnconsultor.es/">
+<meta name="author" content="NN Consultor">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NN Consultor">
+<meta property="og:title" content="NN Consultor — Segunda opinión de marketing para tu empresa">
+<meta property="og:description" content="Analizamos tu web, tu SEO, tus anuncios y tus redes sociales en 7 días y te decimos si tu inversión en marketing está funcionando de verdad.">
+<meta property="og:url" content="https://nnconsultor.es/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://nnconsultor.es/assets/img/equipo-marketing.webp">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NN Consultor — Segunda opinión de marketing para tu empresa">
+<meta name="twitter:description" content="Auditoría independiente de tu web, SEO, ads y redes sociales en 7 días. Garantía 100%.">
+<meta name="twitter:image" content="https://nnconsultor.es/assets/img/equipo-marketing.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='black'/%3E%3Ctext x='50' y='64' font-family='Arial,sans-serif' font-weight='800' font-size='42' fill='white' text-anchor='middle'%3ENN%3C/text%3E%3C/svg%3E">
+
+<!-- Schema.org: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://nnconsultor.es/#organization",
+  "name": "NN Consultor",
+  "alternateName": "NN Consultor - Segunda Opinión de Marketing",
+  "url": "https://nnconsultor.es/",
+  "logo": "https://nnconsultor.es/favicon.svg",
+  "description": "Consultoría independiente que audita la web, el SEO, los anuncios y las redes sociales de pymes y negocios locales, con o sin agencia contratada.",
+  "areaServed": "ES",
+  "knowsLanguage": "es"
+}
+</script>
+
+<!-- Schema.org: Service / Offer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Auditoría de marketing digital / Segunda opinión de marketing",
+  "provider": { "@id": "https://nnconsultor.es/#organization" },
+  "areaServed": "ES",
+  "description": "Auditoría independiente de presencia web, SEO, campañas de publicidad (Google Ads / Meta Ads) y redes sociales, entregada en 7 días con informe y llamada explicativa de 30 minutos.",
+  "offers": {
+    "@type": "Offer",
+    "price": "250",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://nnconsultor.es/#precio",
+    "priceValidUntil": "2026-12-31"
+  }
+}
+</script>
+
+<!-- Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Esto sustituye a mi agencia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, es una revisión independiente, no una gestión continuada." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es confidencial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, nunca contactamos a tu agencia ni compartimos tu información con nadie." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda?",
+      "acceptedAnswer": { "@type": "Answer", "text": "7 días desde que recibimos la información sobre tu agencia." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si mi agencia lo está haciendo todo bien?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mejor para ti: te vas con la tranquilidad confirmada de que tu inversión está en buenas manos, y esa certeza no tiene precio." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué necesitáis de mí para empezar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Solo el enlace a tu web y una breve descripción de qué gestiona tu agencia actualmente (web, SEO, ads, redes sociales). Nosotros nos encargamos del resto." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué formato recibo el informe?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Un documento claro con los hallazgos, capturas y prioridades ordenadas por impacto, además de una llamada de 30 minutos para resolver dudas." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Vale para cualquier tipo de negocio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos con pymes y negocios locales de cualquier sector que inviertan en marketing digital, tengan o no agencia contratada." }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{ --blue:#2563eb; }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .reveal-delay-1{transition-delay:.08s;}
+  .reveal-delay-2{transition-delay:.16s;}
+  .reveal-delay-3{transition-delay:.24s;}
+  .reveal-delay-4{transition-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1!important;transform:none!important;transition:none!important;}
+    html{scroll-behavior:auto;}
+  }
+  .radar-ring{border:1px solid rgba(0,0,0,.08);border-radius:9999px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+  .radar-sweep{position:absolute;top:50%;left:50%;width:82%;height:82%;transform:translate(-50%,-50%);border-radius:9999px;overflow:hidden;pointer-events:none;}
+  .radar-sweep-arm{position:absolute;inset:0;background:conic-gradient(from 0deg, rgba(37,99,235,.38), rgba(37,99,235,.12) 12%, rgba(37,99,235,0) 32%);animation:radar-spin 4.5s linear infinite;transform-origin:50% 50%;}
+  @keyframes radar-spin{to{transform:rotate(360deg);}}
+  .radar-dot{position:absolute;width:7px;height:7px;border-radius:9999px;background:var(--blue);opacity:0;animation:radar-blip 4.5s linear infinite;}
+  @keyframes radar-blip{0%,88%,100%{opacity:0;transform:scale(.5);}91%{opacity:1;transform:scale(1.5);}94%{opacity:.6;transform:scale(1);}}
+  @media (prefers-reduced-motion: reduce){
+    .radar-sweep-arm{animation:none;}
+    .radar-dot{animation:none;opacity:.7;}
+  }
+  .faq-toggle[aria-expanded="true"] .faq-icon{transform:rotate(45deg);}
+  .faq-panel{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+</style>
+</head>
+<body class="bg-white text-neutral-900 antialiased">
+
+<!-- Icon sprite (all icons: black line style, no emojis) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.8 2.6 4.2 5.7 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.7-4.2-9S9.2 5.6 12 3Z"/>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+    </symbol>
+    <symbol id="icon-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 11v2a2 2 0 0 0 2 2h1l3 5 2-1-2-4h2l7 4V6l-7 4H6a2 2 0 0 0-2 2Z"/><path d="M18 9v8"/>
+    </symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/>
+      <path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/>
+    </symbol>
+    <symbol id="icon-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a1 1 0 0 1-1 1A15 15 0 0 1 4 5a1 1 0 0 1 1-1Z"/>
+    </symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="4" width="12" height="17" rx="1.5"/><rect x="9" y="2.5" width="6" height="3" rx="1"/><path d="M9 11h6M9 15h6"/>
+    </symbol>
+    <symbol id="icon-file-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 3h6l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M13 3v5h5"/><path d="m10.5 15.5 5-5 1.5 1.5-5 5H10.5v-1.5Z"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m4 12 5 5L20 6"/>
+    </symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 11A8 8 0 0 0 6.3 6.3L4 8.6M4 13a8 8 0 0 0 13.7 4.7L20 15.4"/><path d="M4 4v4.6h4.6M20 20v-4.6h-4.6"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<!-- HEADER -->
+<header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-black/10">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2 font-bold tracking-tight text-lg">
+      <span class="w-9 h-9 rounded-md bg-black text-white flex items-center justify-center text-sm font-extrabold">NN</span>
+      NN CONSULTOR
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-neutral-600">
+      <a href="#servicio" class="hover:text-black transition-colors">Servicio</a>
+      <a href="#proceso" class="hover:text-black transition-colors">Cómo funciona</a>
+      <a href="#preguntas" class="hover:text-black transition-colors">Preguntas</a>
+      <a href="#contacto" class="hover:text-black transition-colors">Contacto</a>
+    </nav>
+    <a href="#contacto" class="hidden sm:inline-flex bg-black text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-neutral-800 transition-colors">Quiero mi segunda opinión</a>
+    <button id="menuToggle" type="button" class="md:hidden w-10 h-10 flex items-center justify-center" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileMenu" class="md:hidden hidden flex-col border-t border-black/10 bg-white px-6 py-4 gap-1 text-sm text-neutral-700">
+    <a href="#servicio" class="py-2">Servicio</a>
+    <a href="#proceso" class="py-2">Cómo funciona</a>
+    <a href="#preguntas" class="py-2">Preguntas</a>
+    <a href="#contacto" class="py-2">Contacto</a>
+    <a href="#contacto" class="mt-2 inline-block text-center bg-black text-white text-sm font-medium px-5 py-2.5 rounded-md">Quiero mi segunda opinión</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero" class="relative flex min-h-screen items-center overflow-hidden bg-white pt-24 pb-16">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center w-full">
+    <div>
+      <div class="flex items-center gap-2 mb-6 reveal">
+        <span class="w-2 h-2 rounded-sm bg-blue-600 inline-block"></span>
+        <span class="text-xs font-semibold tracking-widest text-neutral-500 uppercase">Segunda opinión de marketing</span>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight mb-6 reveal reveal-delay-1">
+        Quédate tranquilo: una segunda opinión de expertos en marketing sobre tu empresa
+      </h1>
+      <p class="text-lg text-neutral-600 max-w-xl mb-8 reveal reveal-delay-2">
+        Analizamos tu web, tu SEO, tus anuncios y tus redes sociales en 7 días, y te decimos si tu inversión está funcionando de verdad.
+      </p>
+      <div class="flex items-center gap-6 mb-10 reveal reveal-delay-3">
+        <a href="#contacto" class="inline-flex items-center gap-2 bg-black text-white font-medium px-6 py-3.5 rounded-md hover:bg-neutral-800 transition-colors">
+          Quiero mi segunda opinión
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#servicio" class="text-sm font-medium text-neutral-500 hover:text-black transition-colors">Saber más</a>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-neutral-500 border-t border-black/10 pt-6 reveal reveal-delay-4">
+        <span>Web · SEO · Ads · Redes</span>
+        <span>7 días de análisis</span>
+        <span>Garantía 100%</span>
+      </div>
+    </div>
+
+    <div class="relative aspect-square w-full max-w-[520px] mx-auto hidden lg:block reveal reveal-delay-2" aria-hidden="true">
+      <div class="radar-ring" style="width:82%;height:82%;"></div>
+      <div class="radar-ring" style="width:58%;height:58%;"></div>
+      <div class="radar-ring" style="width:34%;height:34%;"></div>
+      <div class="absolute" style="width:1px;height:82%;top:9%;left:50%;background:rgba(0,0,0,.06);"></div>
+      <div class="absolute" style="height:1px;width:82%;left:9%;top:50%;background:rgba(0,0,0,.06);"></div>
+
+      <!-- tick marks on outer ring -->
+      <span class="absolute bg-neutral-300" style="width:26px;height:1px;left:80%;top:19%;"></span>
+      <span class="absolute bg-neutral-300" style="width:26px;height:1px;left:80%;top:79%;"></span>
+      <span class="absolute bg-neutral-300" style="width:26px;height:1px;left:12%;top:79%;"></span>
+
+      <!-- rotating radar sweep, like sonar -->
+      <div class="radar-sweep"><div class="radar-sweep-arm"></div></div>
+
+      <!-- blips: light up as the sweep passes over them -->
+      <span class="radar-dot" style="left:44%;top:34%;animation-delay:0s;"></span>
+      <span class="radar-dot" style="left:65%;top:45.5%;animation-delay:.9s;"></span>
+      <span class="radar-dot" style="left:68%;top:61%;animation-delay:1.8s;"></span>
+      <span class="radar-dot" style="left:55%;top:66%;animation-delay:2.7s;"></span>
+      <span class="radar-dot" style="left:40%;top:59%;animation-delay:3.6s;"></span>
+
+      <!-- center badge -->
+      <div class="absolute rounded-full bg-black overflow-hidden flex items-center justify-center shadow-lg" style="width:22%;height:22%;left:53.4%;top:49.6%;transform:translate(-50%,-50%);">
+        <svg class="absolute inset-0 w-full h-full opacity-25" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M-10,55 C15,25 35,85 55,55 C75,25 95,65 110,45" stroke="white" stroke-width="5" fill="none"/>
+          <path d="M-10,65 C15,95 35,35 55,65 C75,95 95,45 110,75" stroke="white" stroke-width="3.5" fill="none" opacity=".7"/>
+        </svg>
+        <span class="relative text-white font-extrabold tracking-tight" style="font-size:1.9rem;">NN</span>
+      </div>
+
+      <!-- labels -->
+      <div class="absolute bg-white border border-black/10 rounded-md px-3 py-1.5 text-xs font-semibold shadow-sm" style="left:15%;top:17%;">SEO</div>
+      <div class="absolute bg-white border border-black/10 rounded-md px-3 py-1.5 text-xs font-semibold shadow-sm" style="left:84%;top:37%;transform:translateX(-100%);">WEB</div>
+      <div class="absolute bg-white border border-black/10 rounded-md px-3 py-1.5 text-xs font-semibold shadow-sm" style="left:86%;top:51%;transform:translateX(-100%);">REDES</div>
+      <div class="absolute bg-white border border-black/10 rounded-md px-3 py-1.5 text-xs font-semibold shadow-sm" style="left:35%;top:54%;">ADS</div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 PROBLEMAS -->
+<section id="servicio" class="relative border-t border-black/10 bg-white py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 01</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 reveal">¿Te suena alguno de estos problemas?</h2>
+        <p class="text-neutral-600 max-w-md mb-10 reveal reveal-delay-1">Tengas agencia o no, nosotros analizamos tu empresa para ver qué cosas se pueden mejorar y ayudarte a crecer.</p>
+
+        <ul class="divide-y divide-black/10 border-t border-black/10">
+          <li class="py-6 flex items-start gap-5 reveal">
+            <span class="text-sm text-neutral-400 font-mono pt-1">01</span>
+            <p class="text-lg">No sabes si tu agencia usa técnicas actuales o las mismas de hace 4 años.</p>
+          </li>
+          <li class="py-6 flex items-start gap-5 reveal reveal-delay-1">
+            <span class="text-sm text-neutral-400 font-mono pt-1">02</span>
+            <p class="text-lg">No puedes evaluar el trabajo de tu agencia porque tú no eres experto en marketing.</p>
+          </li>
+          <li class="py-6 flex items-start gap-5 reveal reveal-delay-2">
+            <span class="text-sm text-neutral-400 font-mono pt-1">03</span>
+            <p class="text-lg">Muchas agencias dan buenos resultados al principio y se acomodan con el tiempo, y nadie te avisa cuando eso pasa.</p>
+          </li>
+          <li class="py-6 flex items-start gap-5 reveal reveal-delay-3">
+            <span class="text-sm text-neutral-400 font-mono pt-1">04</span>
+            <p class="text-lg">Todavía no tienes una agencia que te ayude a crecer y quieres saber el potencial de tu negocio antes de invertir.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <img src="assets/img/empresario-confundido.webp"
+             alt="Empresario confundido revisando un informe de marketing en su portátil"
+             width="560" height="700" loading="lazy"
+             class="w-full h-auto rounded-lg grayscale object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 VERIFICADO -->
+<section class="relative border-t border-black/10 bg-[#FAFAFA] py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 02</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative reveal">
+        <img src="assets/img/equipo-marketing.webp"
+             alt="Equipo de una agencia de marketing trabajando en una mesa con portátiles"
+             width="560" height="450" loading="lazy"
+             class="w-full h-auto rounded-lg grayscale object-cover">
+        <div class="absolute bottom-4 right-4 bg-white rounded-md px-4 py-2 flex items-center gap-2 shadow-sm text-xs font-semibold tracking-wide">
+          <svg class="w-4 h-4 text-green-600" aria-hidden="true"><use href="#icon-check"/></svg> VERIFICADO
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="text-xs font-semibold tracking-widest text-blue-600 uppercase">Verificado</span>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-3 mb-6">Como una segunda opinión médica, pero para tu marketing</h2>
+        <p class="text-neutral-600 mb-10 max-w-lg">
+          Nuestro análisis no sustituye a tu agencia, no genera conflicto con ella, solo te da claridad independiente sobre si tu inversión está bien gestionada.
+          Tanto si encontramos fallos como si no, sales ganando: si hay problemas, tienes un plan claro de qué corregir. Si todo está en orden, tienes la tranquilidad confirmada de que tu inversión está en buenas manos.
+        </p>
+        <div class="grid grid-cols-3 gap-6">
+          <div>
+            <p class="text-xs font-semibold text-blue-600 tracking-widest mb-1">INDEPENDIENTE</p>
+            <p class="text-sm text-neutral-600">Sin conflicto</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-blue-600 tracking-widest mb-1">CLARA</p>
+            <p class="text-sm text-neutral-600">Plan accionable</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-blue-600 tracking-widest mb-1">SIN RIESGO</p>
+            <p class="text-sm text-neutral-600">Garantía total</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 QUÉ ANALIZAMOS -->
+<section class="relative border-t border-black/10 bg-white py-24 lg:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 03</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-10 reveal">Qué analizamos</h2>
+
+    <div class="border border-black/10 rounded-lg overflow-hidden reveal reveal-delay-1">
+      <div class="flex items-center justify-between px-6 py-4 bg-[#FAFAFA] text-xs font-semibold tracking-widest text-neutral-500">
+        <span>AUDITORÍA COMPLETA</span>
+        <span>NN CONSULTOR</span>
+      </div>
+      <ul class="divide-y divide-black/10">
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-globe"/></svg></span>Análisis de presencia web y experiencia de usuario</span>
+          <span class="text-neutral-400 line-through">500€</span>
+        </li>
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-search"/></svg></span>Análisis de estrategia SEO</span>
+          <span class="text-neutral-400 line-through">600€</span>
+        </li>
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-megaphone"/></svg></span>Análisis de campañas de publicidad (Google Ads / Meta Ads)</span>
+          <span class="text-neutral-400 line-through">600€</span>
+        </li>
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-share"/></svg></span>Análisis de presencia y estrategia en redes sociales</span>
+          <span class="text-neutral-400 line-through">500€</span>
+        </li>
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-file-text"/></svg></span>Informe completo con hallazgos y recomendaciones</span>
+          <span class="text-neutral-400 line-through">400€</span>
+        </li>
+        <li class="flex items-center justify-between px-6 py-4">
+          <span class="flex items-center gap-3"><span class="w-9 h-9 rounded-md border border-black/10 flex items-center justify-center text-neutral-500"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-phone"/></svg></span>Llamada de 30 minutos explicando el informe</span>
+          <span class="text-neutral-400 line-through">200€</span>
+        </li>
+      </ul>
+      <div class="flex items-center justify-between px-6 py-5 bg-[#FAFAFA]">
+        <span class="text-sm font-semibold tracking-widest text-neutral-500">VALOR TOTAL</span>
+        <span class="text-xl font-bold">2.800€</span>
+      </div>
+      <div class="flex items-center justify-between px-6 py-5 border-t border-black/10">
+        <span class="text-sm font-semibold tracking-widest text-blue-600">PRECIO HOY</span>
+        <span class="text-2xl font-extrabold text-blue-600">250€</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PRECIO -->
+<section id="precio" class="relative border-t border-black/10 bg-[#FAFAFA] py-24 lg:py-32 text-center">
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="h-px flex-1 bg-black/10"></span>
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 04</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6 reveal">Precio de lanzamiento</h2>
+    <p class="text-neutral-400 line-through mb-2 font-mono reveal reveal-delay-1">Valor total: 2.800€</p>
+    <p class="text-7xl font-extrabold tracking-tight mb-6 reveal reveal-delay-2">250€</p>
+    <p class="text-neutral-600 max-w-md mx-auto mb-2 reveal reveal-delay-3">Precio hoy. Una sola auditoría, sin permanencia ni costes recurrentes.</p>
+    <p class="text-sm text-neutral-500 mb-10 reveal reveal-delay-3">Solo aceptamos 3 análisis por semana para garantizar la calidad de cada informe.</p>
+    <a href="#contacto" class="inline-flex items-center gap-2 bg-black text-white font-medium px-8 py-4 rounded-md hover:bg-neutral-800 transition-colors reveal reveal-delay-4">
+      Reservar mi análisis <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- 05 GARANTÍA -->
+<section class="relative border-t border-black/10 bg-white py-24 lg:py-32">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-500 tracking-widest">/ 05</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <div class="relative bg-black text-white rounded-xl px-10 py-14 text-center reveal reveal-delay-1">
+      <span class="absolute top-4 left-4 w-6 h-6 border-t border-l border-blue-500" aria-hidden="true"></span>
+      <span class="absolute bottom-4 right-4 w-6 h-6 border-b border-r border-blue-500" aria-hidden="true"></span>
+      <p class="text-xs font-semibold tracking-widest text-blue-400 uppercase mb-4">Garantía de devolución 100%</p>
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Sin riesgo para ti</h2>
+      <p class="text-neutral-300 max-w-2xl mx-auto mb-10">
+        Te garantizamos al menos <strong class="text-white">3 mejoras accionables</strong> que no conocías sobre tu estrategia actual.
+        Si no las encontramos, te <strong class="text-white">devolvemos el 100% de tu dinero</strong>.
+      </p>
+      <div class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-xs font-semibold tracking-widest text-neutral-400 border-t border-white/10 pt-8">
+        <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4" aria-hidden="true"><use href="#icon-refresh"/></svg>REEMBOLSO ÍNTEGRO</span>
+        <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4" aria-hidden="true"><use href="#icon-check"/></svg>COMPROMISO POR ESCRITO</span>
+        <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4" aria-hidden="true"><use href="#icon-shield"/></svg>SIN PREGUNTAS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PROCESO -->
+<section id="proceso" class="relative border-t border-black/10 bg-[#FAFAFA] py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 06</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-12 reveal">El proceso</h2>
+    <ol class="grid md:grid-cols-3 gap-6">
+      <li class="bg-white border border-black/10 rounded-lg p-8 reveal">
+        <div class="flex items-start justify-between mb-8">
+          <span class="text-sm font-semibold text-blue-600">01</span>
+          <span class="w-10 h-10 rounded-md border border-black/10 flex items-center justify-center text-neutral-700"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-clipboard"/></svg></span>
+        </div>
+        <h3 class="text-lg font-bold mb-2">Cuéntanos qué hace tu agencia</h3>
+        <p class="text-sm text-neutral-600">Rellenas un formulario breve contándonos qué hace tu agencia (web, SEO, publicidad, redes sociales).</p>
+      </li>
+      <li class="bg-white border border-black/10 rounded-lg p-8 reveal reveal-delay-1">
+        <div class="flex items-start justify-between mb-8">
+          <span class="text-sm font-semibold text-blue-600">02</span>
+          <span class="w-10 h-10 rounded-md border border-black/10 flex items-center justify-center text-neutral-700"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-search"/></svg></span>
+        </div>
+        <h3 class="text-lg font-bold mb-2">Análisis experto actualizado</h3>
+        <p class="text-sm text-neutral-600">Analizamos cada área con ojo experto y actualizado a las técnicas de hoy.</p>
+      </li>
+      <li class="bg-white border border-black/10 rounded-lg p-8 reveal reveal-delay-2">
+        <div class="flex items-start justify-between mb-8">
+          <span class="text-sm font-semibold text-blue-600">03</span>
+          <span class="w-10 h-10 rounded-md border border-black/10 flex items-center justify-center text-neutral-700"><svg class="w-5 h-5" aria-hidden="true"><use href="#icon-file-edit"/></svg></span>
+        </div>
+        <h3 class="text-lg font-bold mb-2">Informe + llamada explicativa</h3>
+        <p class="text-sm text-neutral-600">Recibes un informe completo y una llamada de 30 minutos explicándolo todo.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 07 FAQ -->
+<section id="preguntas" class="relative border-t border-black/10 bg-white py-24 lg:py-32">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 07</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-10 reveal">Preguntas frecuentes</h2>
+
+    <div class="border-t border-black/10 divide-y divide-black/10">
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Esto sustituye a mi agencia?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">No, es una revisión independiente, no una gestión continuada.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Es confidencial?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">Sí, nunca contactamos a tu agencia ni compartimos tu información con nadie.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Cuánto tarda?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">7 días desde que recibimos la información sobre tu agencia.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Y si mi agencia lo está haciendo todo bien?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">Mejor para ti: te vas con la tranquilidad confirmada de que tu inversión está en buenas manos, y esa certeza no tiene precio.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Qué necesitáis de mí para empezar?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">Solo el enlace a tu web y una breve descripción de qué gestiona tu agencia actualmente (web, SEO, ads, redes sociales). Nosotros nos encargamos del resto.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿En qué formato recibo el informe?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">Un documento claro con los hallazgos, capturas y prioridades ordenadas por impacto, además de una llamada de 30 minutos para resolver dudas.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="faq-toggle w-full flex items-center justify-between py-6 text-left" aria-expanded="false">
+          <h3 class="text-lg font-medium">¿Vale para cualquier tipo de negocio?</h3>
+          <span class="faq-icon text-2xl text-neutral-400 transition-transform" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-panel">
+          <p class="pb-6 text-neutral-600">Sí, trabajamos con pymes y negocios locales de cualquier sector que inviertan en marketing digital, tengan o no agencia contratada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 FORMULARIO -->
+<section id="contacto" class="relative border-t border-black/10 bg-[#FAFAFA] py-24 lg:py-32">
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10 reveal">
+      <span class="text-sm font-semibold text-blue-600 tracking-widest">/ 08</span>
+      <span class="h-px flex-1 bg-black/10"></span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-3 reveal">Empieza tu segunda opinión</h2>
+    <p class="text-neutral-600 mb-10 reveal reveal-delay-1">Rellena el formulario y reservamos tu plaza para el análisis de esta semana.</p>
+
+    <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6 reveal reveal-delay-2" onsubmit="event.preventDefault(); fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(this)).toString()}).then(()=>{this.querySelector('button').textContent='¡Recibido! Te contactamos en menos de 24h'; this.querySelectorAll('input,textarea,button').forEach(el=>el.disabled=true);});">
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="hidden"><label>No rellenar si eres humano: <input name="bot-field"></label></p>
+      <div>
+        <label class="block text-xs font-semibold tracking-widest text-neutral-500 mb-2" for="nombre">NOMBRE</label>
+        <input id="nombre" name="nombre" type="text" required class="w-full border-0 border-b border-black/20 focus:border-blue-600 bg-transparent py-2 outline-none">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold tracking-widest text-neutral-500 mb-2" for="email">EMAIL</label>
+        <input id="email" name="email" type="email" required class="w-full border-0 border-b border-black/20 focus:border-blue-600 bg-transparent py-2 outline-none">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold tracking-widest text-neutral-500 mb-2" for="empresa">EMPRESA</label>
+        <input id="empresa" name="empresa" type="text" required class="w-full border-0 border-b border-black/20 focus:border-blue-600 bg-transparent py-2 outline-none">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold tracking-widest text-neutral-500 mb-2" for="web">WEB DE LA EMPRESA</label>
+        <input id="web" name="web" type="url" required class="w-full border-0 border-b border-black/20 focus:border-blue-600 bg-transparent py-2 outline-none">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold tracking-widest text-neutral-500 mb-2" for="descripcion">BREVE DESCRIPCIÓN DE QUÉ HACE TU AGENCIA (WEB, SEO, ADS, REDES SOCIALES)</label>
+        <textarea id="descripcion" name="descripcion" rows="3" class="w-full border-0 border-b border-black/20 focus:border-blue-600 bg-transparent py-2 outline-none resize-none"></textarea>
+      </div>
+      <button type="submit" class="inline-flex items-center gap-2 bg-black text-white font-medium px-6 py-3.5 rounded-md hover:bg-neutral-800 transition-colors">
+        Enviar y reservar mi plaza <span aria-hidden="true">→</span>
+      </button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-black/10 bg-white">
+  <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+    <div class="flex items-center gap-3">
+      <span class="w-10 h-10 rounded-md bg-black text-white flex items-center justify-center text-sm font-extrabold">NN</span>
+      <div>
+        <p class="font-bold tracking-tight">NN CONSULTOR</p>
+        <p class="text-sm text-neutral-500">Consultoría y crecimiento digital · <a href="https://nnconsultor.es" class="hover:text-black transition-colors">nnconsultor.es</a></p>
+      </div>
+    </div>
+    <nav class="flex flex-wrap gap-x-8 gap-y-2 text-sm text-neutral-600">
+      <a href="#servicio" class="hover:text-black transition-colors">Servicio</a>
+      <a href="#proceso" class="hover:text-black transition-colors">Cómo funciona</a>
+      <a href="#preguntas" class="hover:text-black transition-colors">Preguntas</a>
+      <a href="#contacto" class="hover:text-black transition-colors">Contacto</a>
+    </nav>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 pb-8 pt-6 border-t border-black/10 flex flex-col md:flex-row gap-2 md:items-center md:justify-between text-xs text-neutral-400">
+    <p>© 2026 NN Consultor. Todos los derechos reservados.</p>
+    <p>nnconsultor.es</p>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => io.observe(el));
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    mobileMenu.classList.toggle('hidden', isOpen);
+    mobileMenu.classList.toggle('flex', !isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menuBtn.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+  }));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-toggle').forEach(btn => {
+    const panel = btn.nextElementSibling;
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-toggle').forEach(other => {
+        other.setAttribute('aria-expanded', 'false');
+        other.nextElementSibling.style.maxHeight = null;
+      });
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+</body>
+</html>
